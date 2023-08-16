@@ -14,16 +14,16 @@ Det tilsendte json-data er et array med objekter for alle 98 kommuner i DK. <br>
 [
   {
     kommune: "string",
-    hus?: {
+    hus: {
       billigere: {
-        resultat: 1 | 2 | 0,
+        resultat: Number,
         text: "string" // ex "1.2 mio" - så valgmuligheden "Under 1.2 mio"
       },
-      typisk: {...},
-      dyrere: {...},,
+      typisk: {},
+      dyrere: {},
     }
-    ejerlejlighed?: EjendomstypeObjekt,
-    sommerhus?: EjendomstypeObjekt,
+    ejerlejlighed: {},
+    sommerhus: {},
   },
 ]
 ```

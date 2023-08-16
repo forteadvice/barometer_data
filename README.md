@@ -10,7 +10,7 @@ mahtias.j@forteadvice.com <br>
 
 Det tilsendte json-data er et array med objekter for alle 98 kommuner i DK. <br>
 
-```JSON
+```TXT
 [
   {
     kommune: "string",

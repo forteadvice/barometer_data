@@ -16,7 +16,7 @@ Det tilsendte json-data er et array med objekter for alle 98 kommuner i DK. <br>
     kommune: "string",
     hus: { // EjendomstypeObject
       billigere: {
-        resultat: Number,
+        resultat: Number, // kan være 1, 2 eller 0
         text: "string" // ex "1.2 mio" - så valgmuligheden "Under 1.2 mio"
       },
       typisk: {
@@ -40,7 +40,7 @@ Hvis en ejendomstype ikke findes for den pågældende kommune, skyldes dette at 
 
 Dette skal selvfølgelig håndteres med en fejlbesked - prøv evt sommerhuse for 2100 københavn i demoen. <br>
 
-Hver ejendomstype (hus, ejerlijlighed, sommerhus) er inddelt i "billigere", "typisk" og "dyrere", hvilke bliver omsat til "under", "mellem" og "over" i fronten. <br>
+Hver ejendomstype (hus, ejerlejlighed, sommerhus) er inddelt i "billigere", "typisk" og "dyrere", hvilke bliver omsat til "under", "mellem" og "over" i fronten. <br>
 
 "text" er den beregenede værdi som skal bruges i fronten <br>
 
